@@ -1,3 +1,61 @@
+html {
+  font-family: sans-serif;
+}
+
 body {
   background-color: #60d9f1;
+  min-height: 100vh;
+}
+
+img {
+  width:100px;
+  height: 100px;
+}
+
+ul{
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 5px;
+  width: calc(20% - 10px);
+}
+
+.container {
+  text-align: center;
+  margin:1em;
+}
+
+.player {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#bandsong {
+font-size: 12px;
+font-weight: bold;
+}
+
+audio.music-player{
+  width: 100%;
+}
+
+#resultsp{
+  text-align: left;
+  font-weight: bold;
+}
+
+input {
+  width:86%;
+}
+
+button {
+  width:10%;
 }
