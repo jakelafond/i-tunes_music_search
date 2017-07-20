@@ -12,11 +12,27 @@ const resultsUl = document.querySelector('#resultsUl')
 
 // 2. Create your `submit` event for getting the user's search term
 
+<<<<<<< HEAD
 searchBox.addEventListener('submit', event => {
   event.preventDefault()
   var capture = searchBox.value
   url += capture
 })
+=======
+searchButton.addEventListener('click', event => {
+  var capture = searchBox.value;
+  url += capture;
+  console.log(url);
+});
+
+// let capture = '';
+// function findSongs() {
+//   var capture = searchBox.value;
+//   console.log(capture);
+//   url += capture;
+// console.log(capture);
+// };
+>>>>>>> b15896d21d1e7feb07b411bcea5df9e99c83e0d9
 
 // 3. Create your `fetch` request that is called after a submission
 // 4. Create a way to append the fetch results to your page
