@@ -19,14 +19,6 @@ searchButton.addEventListener('click', event => {
   console.log(url);
 });
 
-// let capture = '';
-// function findSongs() {
-//   var capture = searchBox.value;
-//   console.log(capture);
-//   url += capture;
-// console.log(capture);
-// };
->>>>>>> b15896d21d1e7feb07b411bcea5df9e99c83e0d9
 
 // 3. Create your `fetch` request that is called after a submission
 // 4. Create a way to append the fetch results to your page
