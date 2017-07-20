@@ -12,10 +12,10 @@ const resultsUl = document.querySelector('#resultsUl');
 
 // 2. Create your `submit` event for getting the user's search term
 
-searchBox.addEventListener('submit', event => {
-  event.preventDefault();
+searchButton.addEventListener('click', event => {
   var capture = searchBox.value;
   url += capture;
+  console.log(url);
 });
 
 // let capture = '';
