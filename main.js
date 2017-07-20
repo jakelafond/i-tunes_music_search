@@ -26,10 +26,12 @@ searchButton.addEventListener('click', event => {
     for (var i=0; i<data.results.length; i++){
       var dataPoint = data.results[i];
       var musicURL = dataPoint.previewUrl;
+      var songName = dataPoint.trackName;
 
       var newLi = document.createElement('li');
 
-      newLi.dataset.previewUrl = musicURL
+      newLi.dataset.previewUrl = musicURL;
+      newLi.dataset.trackName = songName;
 
       var newImg = document.createElement('img');
       newImg.src = dataPoint.artworkUrl100;
@@ -46,6 +48,7 @@ searchButton.addEventListener('click', event => {
       newLi.addEventListener('click', event => {
         musicPlayer.src = event.currentTarget.dataset.previewUrl
         musicPlayer.play()
+        musicPlaying.textContent = `Now Playing: ${event.currentTarget.dataset.trackName}`
       })
     resultsUl.appendChild(newLi);
     }
